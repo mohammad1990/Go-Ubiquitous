@@ -223,12 +223,14 @@ public class MyWatchFace extends CanvasWatchFaceService {
 
             if (visible) {
                 registerReceiver();
+                mGoogleApiClient.connect();
 
                 // Update time zone in case it changed while we weren't visible.
                 mCalendar.setTimeZone(TimeZone.getDefault());
                 invalidate();
             } else {
                 unregisterReceiver();
+                mGoogleApiClient.disconnect();
             }
 
             // Whether the timer should be running depends on whether we're visible (as well as
@@ -464,8 +466,8 @@ public class MyWatchFace extends CanvasWatchFaceService {
 
         @Override
         public void onConnected(@Nullable Bundle bundle) {
+            Log.d(TAG, "onConnected");
             Wearable.DataApi.addListener(mGoogleApiClient, WatchFaceEngine.this);
-
             requestWeatherInfo();
         }
 

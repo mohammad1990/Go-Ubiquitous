@@ -16,6 +16,12 @@ Android Support RecyclerView 22.2.0
 Google Play Services GCM 7.0.0
 BumpTech Glide 3.5.2
 
+Screen
+---------------
+
+![wear](https://cloud.githubusercontent.com/assets/7848562/20635876/1b189e44-b36c-11e6-8cb7-a8f9003a4e30.png)
+
+![screenshot_1480032318](https://cloud.githubusercontent.com/assets/7848562/20635885/4d5800b6-b36c-11e6-94d0-8a141aef7c0f.png)
 
 Getting Started
 ---------------

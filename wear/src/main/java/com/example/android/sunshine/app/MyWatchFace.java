@@ -144,7 +144,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
         String mWeatherHigh;
         String mWeatherLow;
 
-        float mTimeYOffset;
+        float mTimeYOffset =100;
         float mDateYOffset;
         float mDividerYOffset;
         float mWeatherYOffset;
